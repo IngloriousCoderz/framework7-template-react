@@ -6,11 +6,11 @@
     "framework7": "^3.0.1",
     "framework7-icons": "^0.9.1",
     "framework7-react": "^3.0.1",
-    "http-server": "^0.11.1",
     "material-design-icons": "^3.0.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "serve": "^10.1.1"
   },
   "scripts": {
     "dev": "react-scripts start",
@@ -19,7 +19,7 @@
     "eject": "react-scripts eject",
     "copy-fonts": "cpy node_modules/framework7-icons/fonts/*.* src/fonts && cpy node_modules/material-design-icons/iconfont/*.{eot,ttf,woff,woff2} src/fonts",
     "postinstall": "npm run copy-fonts && npm run build",
-    "start": "http-server build"
+    "start": "serve build"
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
